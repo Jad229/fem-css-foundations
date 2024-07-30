@@ -106,6 +106,10 @@ a {
   vertical-align: middle;
 }
 
+.menu {
+  display: none;
+}
+
 @media (max-width: 1220px) {
   .button {
     font-size: 24px;
@@ -115,6 +119,21 @@ a {
 
   .button-icon {
     width: 20px;
+  }
+}
+
+@media (max-width: 840px) {
+  .menu {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header {
+    grid-template-columns: 33px 1fr 34px;
+    justify-items: center;
   }
 }
 
